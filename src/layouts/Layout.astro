@@ -1,0 +1,28 @@
+---
+import '@fontsource-variable/orbitron';
+import '@fontsource-variable/inter';
+import Header from '../components/Header.astro';
+---
+
+<style is:global>
+  :root {
+    --font-sans: 'Inter Variable', sans-serif;
+    --font-display: 'Orbitron Variable', sans-serif;
+
+    --accent: #FC0842;
+    --secondary: #ADADAD;
+  }
+</style>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Document</title>
+  </head>
+  <body>
+    <Header />
+    <slot />
+  </body>
+</html>
