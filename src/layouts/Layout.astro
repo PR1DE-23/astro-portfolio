@@ -1,5 +1,5 @@
 ---
-import '@fontsource-variable/orbitron';
+import '@fontsource-variable/epilogue';
 import '@fontsource-variable/inter';
 import Header from '../components/Header.astro';
 ---
@@ -7,10 +7,7 @@ import Header from '../components/Header.astro';
 <style is:global>
   :root {
     --font-sans: 'Inter Variable', sans-serif;
-    --font-display: 'Orbitron Variable', sans-serif;
-
-    --accent: #FC0842;
-    --secondary: #ADADAD;
+    --font-display: 'Epilogue Variable', sans-serif;
   }
 </style>
 
@@ -19,10 +16,12 @@ import Header from '../components/Header.astro';
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Document</title>
+    <title>Portfolio</title>
   </head>
-  <body>
+
+  <body class="bg-slate-100 min-h-screen w-full text-slate-100 font-sans">
     <Header />
     <slot />
   </body>
+
 </html>

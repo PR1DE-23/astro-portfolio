@@ -1,15 +1,21 @@
 ---
-import { Mail, TextAlignJustify } from '@lucide/astro'
+import { TextAlignJustify } from '@lucide/astro'
 ---
-<header class="flex items-center justify-between px-4">
-  <span class='text-xl leading-6 font-display font-black italic'>DC</span>
+<div class="w-full bg-[#1C1C1C] border-b-2 border-slate-100">
+  <header class="mx-auto max-w-[1440px] px-4 md:px-8 grid grid-cols-2 md:grid-cols-12 gap-x-4 items-center py-4">
+    
+    <span class="col-span-1 md:col-span-4 text-2xl text-slate-100 font-black">DEVIL.OPER</span>
 
-  <div class="flex gap-2">
-  <button class="bg-gray-200 p-4 rounded-md">
-    <Mail class=''/>
-  </button>
-  <button class="text-white bg-black p-4 rounded-md">
-    <TextAlignJustify class=''/>
-  </button>
-  </div>
-</header>
+    <button class="col-span-1 justify-self-end md:hidden text-slate-100">
+      <TextAlignJustify/>
+    </button>
+    
+    <nav class="text-gray-300 hidden md:flex md:col-span-8 justify-end gap-6 font-display font-bold">
+      <a href="" class="hover:text-slate-100 transition-colors duration-300">ABOUT</a>
+      <a href="" class="hover:text-slate-100 transition-colors duration-300">SKILLS</a>
+      <a href="" class="hover:text-slate-100 transition-colors duration-300">PROJECTS</a>  
+      <a href="" class="hover:text-slate-100 transition-colors duration-300">CONTACT</a>
+    </nav>
+
+  </header>
+</div>
