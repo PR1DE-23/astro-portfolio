@@ -11,7 +11,7 @@ import Header from '../components/Header.astro';
   }
 </style>
 
-<html lang="es">
+<html lang="es" class="scroll-smooth">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
@@ -19,9 +19,8 @@ import Header from '../components/Header.astro';
     <title>Portfolio</title>
   </head>
 
-  <body class="bg-slate-100 min-h-screen w-full text-slate-100 font-sans">
+  <body class="min-h-screen w-full font-sans">
     <Header />
     <slot />
   </body>
-
 </html>

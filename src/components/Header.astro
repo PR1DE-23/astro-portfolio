@@ -1,21 +1,23 @@
 ---
 import { TextAlignJustify } from '@lucide/astro'
 ---
-<div class="w-full bg-[#1C1C1C] border-b-2 border-slate-100">
-  <header class="mx-auto max-w-[1440px] px-4 md:px-8 grid grid-cols-2 md:grid-cols-12 gap-x-4 items-center py-4">
-    
-    <span class="col-span-1 md:col-span-4 text-2xl text-slate-100 font-black">DEVIL.OPER</span>
+<header class="w-full bg-[#1C1C1C]">
 
-    <button class="col-span-1 justify-self-end md:hidden text-slate-100">
-      <TextAlignJustify/>
-    </button>
+  <div class="mx-auto max-w-[1440px] px-4 md:px-8 py-6 grid grid-cols-2 md:grid-cols-12 gap-4 items-center">
     
-    <nav class="text-gray-300 hidden md:flex md:col-span-8 justify-end gap-6 font-display font-bold">
-      <a href="" class="hover:text-slate-100 transition-colors duration-300">ABOUT</a>
-      <a href="" class="hover:text-slate-100 transition-colors duration-300">SKILLS</a>
-      <a href="" class="hover:text-slate-100 transition-colors duration-300">PROJECTS</a>  
-      <a href="" class="hover:text-slate-100 transition-colors duration-300">CONTACT</a>
+    <a href="#" class="md:col-span-3 text-2xl font-mono font-bold text-slate-100 hover:text-pink-400 transition-colors tracking-tight">
+      <span class="text-pink-500">_</span>dcarbajal
+    </a>
+    
+    <nav class="hidden md:flex md:col-span-9 justify-end gap-8 font-display font-medium text-sm tracking-wide text-gray-400">
+      <a href="#about" class="hover:text-slate-100 transition-colors duration-300">ABOUT</a>
+      <a href="#skills" class="hover:text-slate-100 transition-colors duration-300">SKILLS</a>
+      <a href="#projects" class="hover:text-slate-100 transition-colors duration-300">PROJECTS</a>  
+      <a href="#contact" class="hover:text-slate-100 transition-colors duration-300">CONTACT</a>
     </nav>
 
-  </header>
-</div>
+    <button class="md:hidden justify-self-end text-slate-100 hover:text-pink-400 transition-colors col-span-1">
+      <TextAlignJustify/>
+    </button>
+  </div>
+</header>
