@@ -1,8 +1,27 @@
-<section id="hero" class="w-full bg-[#1C1C1C] text-slate-100">
-  <div class="mx-auto max-w-[1440px] px-4 md:px-8 py-20 grid grid-cols-2 md:grid-cols-12 gap-x-4">
+---
+import Github from '@/assets/icons/GitHub_light.svg';
+import Telegram from '@/assets/icons/telegram.svg';
+import Facebook from '@/assets/icons/facebook-icon.svg';
+import Instagram from '@/assets/icons/instagram-icon.svg';
+---
+<section id="hero" class="w-full">
+  <div class="mx-auto max-w-[1440px] px-4 md:px-8 grid grid-cols-2 md:grid-cols-12 gap-x-4 gap-y-8">
     
-    <h1 class="text-5xl font-bold">Daniel Carbajal<span class="text-pink-500">.</span></h1>
-    <p>Frontend Developer...</p>
-
-  </div>
+    <h1 class="col-span-2 text-4xl font-display">Hello I'am <span class="font-black">Daniel Carbajal.<br>Frontend</span> Developer<br>Based in <span class="font-bold">Perú.</span></h1>
+    <p class="col-span-2 text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dolorum illo quibusdam aliquid ipsa exercitationem fuga delectus incidunt inventore doloribus eum illum veritatis unde quis, repudiandae, ducimus accusamus modi ipsam?</p>
+    <div class="col-span-2 flex gap-6">
+      <div class="h-16 w-16 flex justify-center items-center p-1 border-[3px] border-black rounded-[4px]">
+        <Github  class="w-8 h-8 rounded-full"/>
+      </div>
+      <div class="h-16 w-16 flex justify-center items-center p-1 border-[3px] border-black rounded-[4px]">
+        <Telegram  class="w-6 h-6 bg-black p-1.5 rounded-full"/>
+      </div>
+      <div class="h-16 w-16 flex justify-center items-center p-1 border-[3px] border-black rounded-[4px]">
+        <Facebook  class="w-6 h-6 bg-black p-1.5 rounded-full"/>
+      </div>
+      <div class="h-16 w-16 flex justify-center items-center p-1 border-[3px] border-black rounded-[4px]">
+        <Instagram  class="w-6 h-6 bg-black p-1.5 rounded-full"/>
+      </div>
+    </div>
+  </d>
 </section>

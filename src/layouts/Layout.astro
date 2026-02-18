@@ -1,13 +1,13 @@
 ---
-import '@fontsource-variable/epilogue';
 import '@fontsource-variable/inter';
+import '@fontsource-variable/sora';
 import Header from '../components/Header.astro';
 ---
 
 <style is:global>
   :root {
     --font-sans: 'Inter Variable', sans-serif;
-    --font-display: 'Epilogue Variable', sans-serif;
+    --font-display: 'Sora Variable', sans-serif;
   }
 </style>
 
@@ -19,7 +19,7 @@ import Header from '../components/Header.astro';
     <title>Portfolio</title>
   </head>
 
-  <body class="min-h-screen w-full font-sans">
+  <body class="min-h-screen w-full font-display">
     <Header />
     <slot />
   </body>

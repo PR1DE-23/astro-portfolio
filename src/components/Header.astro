@@ -1,12 +1,12 @@
 ---
 import { TextAlignJustify } from '@lucide/astro'
 ---
-<header class="w-full bg-[#1C1C1C]">
+<header class="w-full">
 
   <div class="mx-auto max-w-[1440px] px-4 md:px-8 py-6 grid grid-cols-2 md:grid-cols-12 gap-4 items-center">
     
-    <a href="#" class="md:col-span-3 text-2xl font-mono font-bold text-slate-100 hover:text-pink-400 transition-colors tracking-tight">
-      <span class="text-pink-500">_</span>dcarbajal
+    <a href="#" class="md:col-span-3 text-2xl font-display font-bold hover:text-pink-400 transition-colors tracking-tight">
+      DCarbajal
     </a>
     
     <nav class="hidden md:flex md:col-span-9 justify-end gap-8 font-display font-medium text-sm tracking-wide text-gray-400">
@@ -16,8 +16,8 @@ import { TextAlignJustify } from '@lucide/astro'
       <a href="#contact" class="hover:text-slate-100 transition-colors duration-300">CONTACT</a>
     </nav>
 
-    <button class="md:hidden justify-self-end text-slate-100 hover:text-pink-400 transition-colors col-span-1">
-      <TextAlignJustify/>
+    <button class="md:hidden justify-self-end hover:text-pink-400 transition-colors col-span-1">
+      <TextAlignJustify stroke-width={3}/>
     </button>
   </div>
 </header>
