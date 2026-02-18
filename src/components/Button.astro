@@ -1,0 +1,25 @@
+---
+interface Props {
+  variant?: 'primary';
+  size?: 'sm' | 'md';
+}
+
+const { variant = 'primary', size = 'md' } = Astro.props;
+
+const base = 'inline-flex items-center justify-center rounded-md font-medium transition'
+
+const variants = {
+  primary: 'bg-black text-white hover:bg-gray-800 active:bg-surface active:text-black active:border-black active:border-[2px]',
+}
+
+const sizes = {
+  sm: 'px-3 py-1.5 text-sm',
+  md: 'px-4 py-2 text-base',
+}
+
+const classes = `${base} ${variants[variant]} ${sizes[size]}`
+---
+
+<button class={classes}>
+  <slot />
+</button>

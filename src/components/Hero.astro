@@ -1,27 +1,30 @@
 ---
-import Github from '@/assets/icons/GitHub_light.svg';
+import Github from '@/assets/icons/github.svg';
 import Telegram from '@/assets/icons/telegram.svg';
-import Facebook from '@/assets/icons/facebook-icon.svg';
-import Instagram from '@/assets/icons/instagram-icon.svg';
+import Facebook from '@/assets/icons/facebook.svg';
+import IconButton from './ui/IconButton.astro';
 ---
 <section id="hero" class="w-full">
-  <div class="mx-auto max-w-[1440px] px-4 md:px-8 grid grid-cols-2 md:grid-cols-12 gap-x-4 gap-y-8">
-    
-    <h1 class="col-span-2 text-4xl font-display">Hello I'am <span class="font-black">Daniel Carbajal.<br>Frontend</span> Developer<br>Based in <span class="font-bold">Perú.</span></h1>
-    <p class="col-span-2 text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dolorum illo quibusdam aliquid ipsa exercitationem fuga delectus incidunt inventore doloribus eum illum veritatis unde quis, repudiandae, ducimus accusamus modi ipsam?</p>
-    <div class="col-span-2 flex gap-6">
-      <div class="h-16 w-16 flex justify-center items-center p-1 border-[3px] border-black rounded-[4px]">
-        <Github  class="w-8 h-8 rounded-full"/>
+  <div class="mx-auto max-w-[1440px] px-4 md:px-8 grid grid-cols-2 md:grid-cols-12 gap-x-4">
+    <div class="flex flex-col col-span-12 md:col-span-6 gap-y-8">
+      <h1 class="text-4xl font-display leading-normal">Hello I'am <span class="font-black">Daniel C. Frontend Developer</span> Based in <span class="font-bold">Perú.</span></h1>
+      <p class="text-sm text-zinc-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dolorum illo quibusdam aliquid ipsa exercitationem fuga delectus incidunt inventore doloribus eum illum veritatis unde quis, repudiandae, ducimus accusamus modi ipsam?</p>
+
+
+      <div class="flex gap-4">
+        <IconButton href="#">
+          <Github  class="w-8 h-8 rounded-full"/>
+        </IconButton>
+        <IconButton>
+          <Telegram  class="w-8 h-8 rounded-full"/>
+        </IconButton>
+        <IconButton>
+          <Facebook  class="w-8 h-8 rounded-full"/>
+        </IconButton>
       </div>
-      <div class="h-16 w-16 flex justify-center items-center p-1 border-[3px] border-black rounded-[4px]">
-        <Telegram  class="w-6 h-6 bg-black p-1.5 rounded-full"/>
-      </div>
-      <div class="h-16 w-16 flex justify-center items-center p-1 border-[3px] border-black rounded-[4px]">
-        <Facebook  class="w-6 h-6 bg-black p-1.5 rounded-full"/>
-      </div>
-      <div class="h-16 w-16 flex justify-center items-center p-1 border-[3px] border-black rounded-[4px]">
-        <Instagram  class="w-6 h-6 bg-black p-1.5 rounded-full"/>
-      </div>
-    </div>
-  </d>
+      
+    </div>    
+  </div>
 </section>
+
+

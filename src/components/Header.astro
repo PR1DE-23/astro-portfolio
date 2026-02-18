@@ -1,22 +1,24 @@
 ---
-import { TextAlignJustify } from '@lucide/astro'
+import { TextAlignJustify, Download } from '@lucide/astro'
+import Button from './Button.astro';
 ---
 <header class="w-full">
 
-  <div class="mx-auto max-w-[1440px] px-4 md:px-8 py-6 grid grid-cols-2 md:grid-cols-12 gap-4 items-center">
+  <div class="mx-auto max-w-[1440px] px-4 md:px-8 py-6 grid grid-cols-2 md:grid-cols-12 gap-4 items-center justify-between">
     
-    <a href="#" class="md:col-span-3 text-2xl font-display font-bold hover:text-pink-400 transition-colors tracking-tight">
+    <a href="#" class="md:col-span-3 text-2xl font-bold transition-colors tracking-tight">
       DCarbajal
     </a>
     
-    <nav class="hidden md:flex md:col-span-9 justify-end gap-8 font-display font-medium text-sm tracking-wide text-gray-400">
-      <a href="#about" class="hover:text-slate-100 transition-colors duration-300">ABOUT</a>
-      <a href="#skills" class="hover:text-slate-100 transition-colors duration-300">SKILLS</a>
-      <a href="#projects" class="hover:text-slate-100 transition-colors duration-300">PROJECTS</a>  
-      <a href="#contact" class="hover:text-slate-100 transition-colors duration-300">CONTACT</a>
+    <nav class="hidden md:flex md:col-span-9 justify-end gap-8 font-bold tracking-wide text-brand items-center">
+      <a href="#about" class="hover:text-zinc-500 transition-colors duration-300">About</a>
+      <a href="#skills" class="hover:text-zinc-500 transition-colors duration-300">Skills</a>
+      <a href="#projects" class="hover:text-zinc-500 transition-colors duration-300">Projects</a>  
+      <a href="#contact" class="hover:text-zinc-500 transition-colors duration-300">Contact</a>
+      <Button variant="primary" size="md">Resume<Download width={16} height={16} stroke-width={3} class="ml-2"/></Button>
     </nav>
 
-    <button class="md:hidden justify-self-end hover:text-pink-400 transition-colors col-span-1">
+    <button class="md:hidden hover:text-zinc-500 transition-colors col-span-1 justify-self-end">
       <TextAlignJustify stroke-width={3}/>
     </button>
   </div>

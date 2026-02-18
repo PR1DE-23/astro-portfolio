@@ -1,9 +1,42 @@
-<section id="about" class="w-full">
-  <div class="mx-auto max-w-[1440px] px-4 md:px-8 py-20 grid grid-cols-2 md:grid-cols-12 gap-x-4">
+---
+import IconButton from "./ui/IconButton.astro";
+import Html5 from '@/assets/icons/html5.svg';
+import Css from '@/assets/icons/css.svg';
+import Javascript from '@/assets/icons/javascript.svg';
+import Tailwind from '@/assets/icons/tailwindcss.svg';
+import Sass from '@/assets/icons/sass.svg';
+import Git from '@/assets/icons/git.svg';
+---
+
+<section id="skills" class="w-full bg-brand ">
+  <div class="mx-auto max-w-[1440px] text-brand-white px-4 md:px-8 py-20 grid grid-cols-2 md:grid-cols-12 gap-x-4">
     
-    <h2 class="col-span-2 font-display text-4xl mb-6 text-center">My <span class="font-bold">Skills</span></h2>
-    <div>
-      
+    <h2 class="col-span-2 md:col-span-12 text-3xl mb-6 text-center">My <span class="font-bold">Skills</span></span>
+    <div class="col-span-2 md:col-span-12">
+      <IconButton size="lg" variant="box">
+        <Html5 />
+        HTML5
+      </IconButton>  
+      <IconButton size="lg" variant="box">
+        <Css />
+        CSS3
+      </IconButton> 
+      <IconButton size="lg" variant="box">
+        <Javascript />
+        JAVASCRIPT
+      </IconButton> 
+      <IconButton size="lg" variant="box">
+        <Tailwind />
+        TAILWIND
+      </IconButton>  
+      <IconButton size="lg" variant="box">
+        <Sass />
+        SASS
+      </IconButton> 
+      <IconButton size="lg" variant="box">
+        <Git />
+        GIT
+      </IconButton> 
     </div>
 
   </div>

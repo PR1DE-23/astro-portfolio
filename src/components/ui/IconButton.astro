@@ -1,0 +1,32 @@
+---
+interface Props {
+  href?: string;
+  size?: 'sm' | 'md' | 'lg';
+  variant?: 'default' | 'box';
+}
+
+const { 
+  href = '#',
+  size = 'md',
+  variant = 'default',
+} = Astro.props;
+
+const base = 'inline-flex items-center justify-center rounded-[4px] border-2 border-brand '
+
+const sizes = {
+  sm: 'h-8 w-8',
+  md: 'h-12 w-12',
+  lg: 'h-32 w-32 flex-col gap-2 p-2',
+}
+
+const variants = {
+  default: 'hover:bg-brand hover:text-brand-white transition duration-200 cursor-pointer',
+  box: 'border-brand-white',
+}
+
+const classes = `${base} ${sizes[size]} ${variants[variant]}`
+---
+
+<a  href={href} class={classes}>
+  <slot />
+</a>
